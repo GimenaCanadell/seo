@@ -1,0 +1,59 @@
+
+@import "base/mixins.scss";
+@import "base/clases-aux.scss";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:pink;
+	font-family:"open sans",sans-serif;
+	
+	 
+}
+header{
+	a{
+		@include links(grey);
+	}
+	h1{
+		text-algin:center;
+		font-size:4rem;
+		text-transform:uppercase;
+	}
+}
+nav{
+	background-color:white;
+	padding:4rem;
+	ul{
+		display:flex;
+		gap:2rem;
+		justify-content:space-around;
+		flex-wrap:wrap;
+		li{
+			list-style-type:none;
+	  	
+	
+	   }	
+	}
+}
+$colores:(
+	1:red,
+	2:blue,
+	3:green,
+	);
+
+main{
+	@extend .contenedor;
+	@for $i from 1 through 3 {
+		.box#{$i}{
+	          @extend.box;	
+	          background-color:map-get($colores,$i) ;
+		} 
+         
+		}
+	}
+	
+    
+

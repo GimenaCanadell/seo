@@ -1,0 +1,70 @@
+.contenedor, main {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.box, main .box1, main .box2, main .box3 {
+  background-color: grey;
+  border-radius: 4px;
+  height: 300px;
+  widht: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transition: all 400ms ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: pink;
+  font-family: "open sans",sans-serif;
+}
+
+header a {
+  color: grey;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+header a hover {
+  color: blue;
+}
+
+header h1 {
+  text-algin: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: white;
+  padding: 4rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+main .box1 {
+  background-color: red;
+}
+
+main .box2 {
+  background-color: blue;
+}
+
+main .box3 {
+  background-color: green;
+}
